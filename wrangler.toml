@@ -1,0 +1,19 @@
+﻿name = "arise-genops-core"
+main = "src/index.ts"
+compatibility_date = "2026-07-17"
+
+[ai]
+binding = "AI"
+
+[[durable_objects.bindings]]
+name = "MY_DURABLE_OBJECT"
+class_name = "MyDurableObject"
+
+[exports.MyDurableObject]
+type = "durable-object"
+storage = "sqlite"
+
+# Custom domain – uncomment when zone is active
+# [[routes]]
+# pattern = "api.ariex69.in"
+# custom_domain = true
